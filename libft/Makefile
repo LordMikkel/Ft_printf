@@ -6,7 +6,7 @@
 #    By: migarrid <migarrid@student.42barcelona.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/12/28 19:51:37 by migarrid          #+#    #+#              #
-#    Updated: 2025/02/23 22:12:18 by migarrid         ###   ########.fr        #
+#    Updated: 2025/03/18 16:09:10 by migarrid         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -127,11 +127,7 @@ bonus: .bonus
 $(BONUS_DIR)/%.o: $(BONUS_DIR)/%.c libft.h Makefile
 	@$(eval BONUS_COUNT = $(shell expr $(BONUS_COUNT) + 1))
 	@$(PRINTF) "\r%100s\r[ %d/%d (%d%%) ] Compiling $(MAGENTA)$<$(DEFAULT)..." "" $(BONUS_COUNT) $(BONUS_COUNT_TOT) $(BONUS_PCT)
-	@$(CC) $(CFLAGS) -c -o $@ $<
-
-# Cómo compilar cada archivo .c a .o (tanto obligatorio como bonus)
-%.o: %.c libft.h Makefile
-	$(CC) $(CFLAGS) -I. -c -o $@ $<
+	@$(CC) $(CFLAGS) -I. -c -o $@ $<
 
 # Limpiar objetos
 clean:
