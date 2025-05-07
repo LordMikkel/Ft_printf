@@ -1,6 +1,6 @@
 # ft\_printf
 
-<p align="center"> <img src=".score.png" alt="alt text" /> </p>
+<p align="center"> <img src="image/.score.png" alt="alt text" /> </p>
 
 ## 🖋️ A Custom `printf` Implementation
 
@@ -116,7 +116,7 @@ Removes both object files and the compiled static library (`libftprintf.a`). Thi
 - ### 🔄 **`make re/rebonus`**: Rebuild everything
 Performs a complete rebuild of the project from scratch by running `make fclean` followed by `make`. This is perfect when you need to ensure that all files are freshly compiled.
 
-![alt text](imagee/.make.gif)
+![alt text](image/.make.gif)
 
 ---
 
@@ -164,7 +164,7 @@ Each test compares the output of `ft_printf` with the standard `printf` output. 
 
 This printf implementation passes all the tests from ultimate [ft_printf_test](https://github.com/cacharle/ft_printf_test) when you execute the 938 tests, your terminal may display an overwhelming number of warnings—don’t panic! Just let it run, and in the end, you’ll see the final test results.
 
-![alt text](imagee/.tests.png)
+![alt text](image/.tests.png)
 
 ---
 
